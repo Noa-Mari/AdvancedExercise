@@ -13,7 +13,7 @@ namespace AdvancedExercise
         {
             _studentId = studentId;
         }
-        int Divide(int num1, int num2)
+        public int Divide(int num1, int num2)
         {
             if (num2 == 0)
                 throw new MyCoolCalcException(_studentId,$"cant divide a number by 0",new[] {num1,num2});
@@ -23,7 +23,7 @@ namespace AdvancedExercise
             return num1 / num2;
         }
 
-        double Power(int num)
+        public double Power(int num)
         {
             double numNew = Math.Pow(num, 2);
             if (numNew == 6 || num == 6)
